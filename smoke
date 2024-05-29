@@ -1,0 +1,13 @@
+# Function to calculate profit or loss
+def calculate_profit_or_loss(cost_price, selling_price):
+    profit = selling_price - cost_price
+    if profit > 0:
+        return f'{profit} Profit'
+    else:
+        return f'{abs(profit)} Loss'
+
+# Example usage for calculating smoking loss
+cost_price = 10  # Cost of a pack of cigarettes
+selling_price = 0  # No income from not smoking
+loss = calculate_profit_or_loss(cost_price, selling_price)
+print(f'The loss from not smoking is: {loss}')
